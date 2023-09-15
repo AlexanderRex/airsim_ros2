@@ -1,0 +1,85 @@
+{
+    "SettingsVersion": 1.2,
+    "SimMode": "Multirotor",
+    "ClockType": "SteppableClock",
+    "CameraDefaults": {
+        "CaptureSettings": [
+            {
+                "ImageType": 0,
+                "Width": 256,
+                "Height": 144,
+                "FOV_Degrees": 90,
+                "AutoExposureSpeed": 100,
+                "AutoExposureBias": 0,
+                "AutoExposureMaxBrightness": 0.64,
+                "AutoExposureMinBrightness": 0.03,
+                "MotionBlurAmount": 0,
+                "TargetGamma": 1.0,
+                "ProjectionMode": "",
+                "OrthoWidth": 5.12
+            }
+        ],
+        "Gimbal": {
+            "Stabilization": 0,
+            "Pitch": 0,
+            "Roll": 0,
+            "Yaw": 0
+        }
+    },
+    "Vehicles": {
+        "PX4": {
+            "VehicleType": "PX4Multirotor",
+            "UseSerial": false,
+            "LockStep": true,
+            "UseTcp": true,
+            "TcpPort": 4560,
+            "ControlPortLocal": 14540,
+            "ControlPortRemote": 14580,
+            "Sensors": {
+                "Barometer": {
+                    "SensorType": 1,
+                    "Enabled": true,
+                    "PressureFactorSigma": 0.0001825
+                }
+            },
+            "Cameras": {
+                "GimbalCam": {
+                    "X": 0,
+                    "Y": 0,
+                    "Z": 1
+                }
+            },
+            "Parameters": {
+                "NAV_RCL_ACT": 0,
+                "NAV_DLL_ACT": 0,
+                "COM_OBL_ACT": 1,
+                "LPE_LAT": 40.393919,
+                "LPE_LON": 49.956148
+            }
+        }
+    },
+    "OriginGeopoint": {
+        "Latitude": 40.393919,
+        "Longitude": 49.956148,
+        "Altitude": 49
+    },
+    "SubWindows": [
+        {
+            "WindowID": 1,
+            "CameraName": "GimbalCam",
+            "ImageType": 0,
+            "VehicleName": "PX4",
+            "Visible": true,
+            "External": false
+        },
+        {
+            "WindowID": 2,
+            "CameraName": "GimbalCam",
+            "ImageType": 3,
+            "VehicleName": "PX4",
+            "Visible": true,
+            "External": false
+        }
+    ]
+}
+
